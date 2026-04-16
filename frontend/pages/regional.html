@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regional Analysis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/charts.js" defer></script>
+  <script src="../js/app.js" defer></script>
+</head>
+<body data-page="regional">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <p>Sales Analytics Suite</p>
+        <h2>Sales Performance &amp; Profit Analysis System</h2>
+      </div>
+      <nav>
+        <a class="nav-link" data-page-link="dashboard" href="../index.html"><span class="nav-icon">🏠</span>Dashboard</a>
+        <a class="nav-link" data-page-link="regional" href="regional.html"><span class="nav-icon">🌍</span>Regional</a>
+        <a class="nav-link" data-page-link="products" href="products.html"><span class="nav-icon">📦</span>Products</a>
+        <a class="nav-link" data-page-link="trends" href="trends.html"><span class="nav-icon">📈</span>Trends</a>
+        <a class="nav-link" data-page-link="forecasting" href="forecasting.html"><span class="nav-icon">🔮</span>Forecasting</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-bar observer-item fade-in">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+        <div class="header-copy">
+          <p>Regional View</p>
+          <h1>📊 Sales Performance Dashboard</h1>
+        </div>
+        <div class="header-meta">
+          <span>Detailed regional performance</span>
+        </div>
+      </header>
+
+      <section class="content-row">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Region Comparison</h2>
+              <p>Share of total sales by region.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="regionalBreakdownChart"></canvas></div>
+        </div>
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Top 10 States</h2>
+              <p>Highest state-level revenue contributors.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="stateSalesChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="table-panel observer-item">
+        <div class="panel-header">
+          <div>
+            <h2>Region-wise Detailed Table</h2>
+            <p>Sortable summary across regions.</p>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table id="regionTable" data-sortable="true">
+            <thead>
+              <tr>
+                <th data-sort-key="region">Region</th>
+                <th data-sort-key="sales">Sales</th>
+                <th data-sort-key="profit">Profit</th>
+                <th data-sort-key="orders">Orders</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="table-panel observer-item" style="margin-top: 25px;">
+        <div class="panel-header">
+          <div>
+            <h2>City-wise Breakdown</h2>
+            <p>Top cities by sales, profit, and order count.</p>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table id="cityTable" data-sortable="true">
+            <thead>
+              <tr>
+                <th data-sort-key="city">City</th>
+                <th data-sort-key="state">State</th>
+                <th data-sort-key="region">Region</th>
+                <th data-sort-key="sales">Sales</th>
+                <th data-sort-key="profit">Profit</th>
+                <th data-sort-key="orders">Orders</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

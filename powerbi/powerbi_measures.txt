@@ -1,0 +1,100 @@
+-- Create Date Table
+DateTable =
+ADDCOLUMNS(
+    CALENDAR(MIN(Sales[Order Date]), MAX(Sales[Order Date])),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month Name", FORMAT([Date], "MMMM"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Year Month", FORMAT([Date], "YYYY-MM")
+)
+
+-- Core KPI Measures
+Total Sales = SUM(Sales[Sales_Amount])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Orders = DISTINCTCOUNT(Sales[Order ID])
+
+Total Quantity = SUM(Sales[Quantity])
+
+Avg Order Value = DIVIDE([Total Sales], [Total Orders], 0)
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0) * 100
+
+Total Customers = DISTINCTCOUNT(Sales[Customer ID])
+
+Total Products = DISTINCTCOUNT(Sales[Product ID])
+
+Avg Shipping Days = AVERAGE(Sales[Shipping_Days])
+
+-- Time Intelligence
+Sales YTD = TOTALYTD([Total Sales], DateTable[Date])
+
+Profit YTD = TOTALYTD([Total Profit], DateTable[Date])
+
+Sales Previous Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DateTable[Date]))
+
+Profit Previous Year = CALCULATE([Total Profit], SAMEPERIODLASTYEAR(DateTable[Date]))
+
+YoY Sales Growth % =
+DIVIDE([Total Sales] - [Sales Previous Year], [Sales Previous Year], 0) * 100
+
+YoY Profit Growth % =
+DIVIDE([Total Profit] - [Profit Previous Year], [Profit Previous Year], 0) * 100
+
+Monthly Sales = [Total Sales]
+
+Quarterly Sales = [Total Sales]
+
+-- Segment and Region Measures
+Sales by Region = [Total Sales]
+
+Profit by Region = [Total Profit]
+
+Sales by Segment = [Total Sales]
+
+Profit by Segment = [Total Profit]
+
+-- Product Measures
+Product Sales Rank =
+RANKX(
+    ALL(Sales[Product Name]),
+    [Total Sales],
+    ,
+    DESC
+)
+
+Top Product Sales = IF([Product Sales Rank] <= 10, [Total Sales], BLANK())
+
+Bottom Product Profit Rank =
+RANKX(
+    ALL(Sales[Product Name]),
+    [Total Profit],
+    ,
+    ASC
+)
+
+Bottom Product Profit = IF([Bottom Product Profit Rank] <= 10, [Total Profit], BLANK())
+
+-- Channel and Payment Measures
+Sales by Channel = [Total Sales]
+
+Sales by Payment Method = [Total Sales]
+
+Orders by Payment Method = DISTINCTCOUNT(Sales[Order ID])
+
+-- Margin Measures
+Average Profit Margin = AVERAGE(Sales[Profit_Margin])
+
+High Margin Orders =
+CALCULATE(
+    DISTINCTCOUNT(Sales[Order ID]),
+    Sales[Margin_Category] = "High (>30%)"
+)
+
+Loss Orders =
+CALCULATE(
+    DISTINCTCOUNT(Sales[Order ID]),
+    Sales[Margin_Category] = "Loss (<0%)"
+)

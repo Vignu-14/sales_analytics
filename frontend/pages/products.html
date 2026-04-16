@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Analysis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/charts.js" defer></script>
+  <script src="../js/app.js" defer></script>
+</head>
+<body data-page="products">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <p>Sales Analytics Suite</p>
+        <h2>Sales Performance &amp; Profit Analysis System</h2>
+      </div>
+      <nav>
+        <a class="nav-link" data-page-link="dashboard" href="../index.html"><span class="nav-icon">🏠</span>Dashboard</a>
+        <a class="nav-link" data-page-link="regional" href="regional.html"><span class="nav-icon">🌍</span>Regional</a>
+        <a class="nav-link" data-page-link="products" href="products.html"><span class="nav-icon">📦</span>Products</a>
+        <a class="nav-link" data-page-link="trends" href="trends.html"><span class="nav-icon">📈</span>Trends</a>
+        <a class="nav-link" data-page-link="forecasting" href="forecasting.html"><span class="nav-icon">🔮</span>Forecasting</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-bar observer-item fade-in">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+        <div class="header-copy">
+          <p>Product View</p>
+          <h1>📊 Sales Performance Dashboard</h1>
+        </div>
+        <div class="header-meta">
+          <span>Category, sub-category, and product detail</span>
+        </div>
+      </header>
+
+      <input class="search-bar observer-item" id="productSearchInput" type="search" placeholder="Search top or bottom products by name">
+
+      <section class="content-row">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Category Performance</h2>
+              <p>Sales and profit by major product category.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="productsCategoryChart"></canvas></div>
+        </div>
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Sub-Category Performance</h2>
+              <p>Top 15 sub-categories by revenue.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="subCategoryChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="content-row single">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Profit Margin by Category</h2>
+              <p>Average margin percentage across core categories.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="marginCategoryChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="content-row">
+        <div class="table-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Top 10 Products</h2>
+              <p>Highest revenue-generating products.</p>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <table id="topProductsTable" data-sortable="true">
+              <thead>
+                <tr>
+                  <th data-sort-key="product">Product</th>
+                  <th data-sort-key="sales">Sales</th>
+                  <th data-sort-key="profit">Profit</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Bottom 10 Products</h2>
+              <p>Lowest performers based on profit.</p>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <table id="bottomProductsTable" data-sortable="true">
+              <thead>
+                <tr>
+                  <th data-sort-key="product">Product</th>
+                  <th data-sort-key="sales">Sales</th>
+                  <th data-sort-key="profit">Profit</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

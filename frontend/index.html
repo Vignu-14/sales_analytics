@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Performance Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/charts.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <p>Sales Analytics Suite</p>
+        <h2>Sales Performance &amp; Profit Analysis System</h2>
+      </div>
+      <nav>
+        <a class="nav-link" data-page-link="dashboard" href="index.html"><span class="nav-icon">🏠</span>Dashboard</a>
+        <a class="nav-link" data-page-link="regional" href="pages/regional.html"><span class="nav-icon">🌍</span>Regional</a>
+        <a class="nav-link" data-page-link="products" href="pages/products.html"><span class="nav-icon">📦</span>Products</a>
+        <a class="nav-link" data-page-link="trends" href="pages/trends.html"><span class="nav-icon">📈</span>Trends</a>
+        <a class="nav-link" data-page-link="forecasting" href="pages/forecasting.html"><span class="nav-icon">🔮</span>Forecasting</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-bar observer-item fade-in">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+        <div class="header-copy">
+          <p>Operational Dashboard</p>
+          <h1>📊 Sales Performance Dashboard</h1>
+        </div>
+        <div class="header-meta">
+          <span>Source: C:\anil</span>
+        </div>
+      </header>
+
+      <section class="kpi-grid">
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">💰</div>
+          <div class="kpi-value" data-kpi-value="totalSales">₹0.00</div>
+          <div class="kpi-label">Total Sales</div>
+        </article>
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">📈</div>
+          <div class="kpi-value" data-kpi-value="totalProfit">₹0.00</div>
+          <div class="kpi-label">Total Profit</div>
+        </article>
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">🧾</div>
+          <div class="kpi-value" data-kpi-value="totalOrders">0</div>
+          <div class="kpi-label">Total Orders</div>
+        </article>
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">🎯</div>
+          <div class="kpi-value" data-kpi-value="profitMargin">0%</div>
+          <div class="kpi-label">Profit Margin</div>
+        </article>
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">🛒</div>
+          <div class="kpi-value" data-kpi-value="avgOrderValue">₹0.00</div>
+          <div class="kpi-label">Avg Order Value</div>
+        </article>
+        <article class="kpi-card observer-item">
+          <div class="kpi-icon">👥</div>
+          <div class="kpi-value" data-kpi-value="totalCustomers">0</div>
+          <div class="kpi-label">Total Customers</div>
+        </article>
+      </section>
+
+      <section class="chart-row">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Monthly Sales Trend</h2>
+              <p>Month-by-month revenue movement.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="monthlySalesChart"></canvas></div>
+        </div>
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Regional Sales</h2>
+              <p>Contribution share across all regions.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="regionSalesChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="chart-row">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Category Performance</h2>
+              <p>Sales and profit by product category.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="categoryChart"></canvas></div>
+        </div>
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Segment Analysis</h2>
+              <p>Sales contribution by customer segment.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="segmentChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="chart-row">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Top 10 Products</h2>
+              <p>Highest sales contributors in the cleaned dataset.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="topProductsChart"></canvas></div>
+        </div>
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Payment Methods</h2>
+              <p>How customers are paying for orders.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="paymentChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="chart-row single">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Sales Channel Comparison</h2>
+              <p>Sales and profit split by channel.</p>
+            </div>
+          </div>
+          <div class="chart-canvas"><canvas id="salesChannelChart"></canvas></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Sales Performance &amp; Profit Analysis System | BCA Final Year Project 2024-25
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+SALES PERFORMANCE & PROFIT ANALYSIS RESULTS
+================================================================================
+
+1. OVERALL KPIs
+                 Metric         Value
+            Total Sales ₹1,082,910.82
+           Total Profit   ₹216,582.16
+           Total Orders         4,922
+         Total Quantity        26,882
+        Avg Order Value       ₹220.01
+Overall Profit Margin %        20.00%
+       Unique Customers           793
+        Unique Products         1,722
+      Avg Shipping Days          3.96
+
+2. SEGMENT ANALYSIS
+    Segment       Sales      Profit Orders
+   Consumer ₹552,594.51 ₹110,518.90  2,537
+  Corporate ₹333,366.29  ₹66,673.26  1,491
+Home Office ₹196,950.02  ₹39,390.00    894
+
+3. REGIONAL ANALYSIS
+ Region       Sales     Profit Orders Margin %
+   West ₹325,811.33 ₹65,162.27  1,587   20.00%
+   East ₹325,375.08 ₹65,075.02  1,369   20.00%
+Central ₹242,473.30 ₹48,494.66  1,156   20.00%
+  South ₹189,251.11 ₹37,850.22    810   20.00%
+Best Region by Sales : West (₹325,811.33)
+Worst Region by Sales: South (₹189,251.11)
+
+4. CATEGORY ANALYSIS
+Product Category Summary
+Product_Category       Sales     Profit Orders Avg_Discount
+      Technology ₹378,204.58 ₹75,640.92    853        0.00%
+       Furniture ₹364,766.86 ₹72,953.37  1,079       -0.00%
+ Office Supplies ₹339,939.38 ₹67,987.88  2,990       -0.00%
+
+Top Sub-Category Summary
+Product_Category Sub_Category       Sales     Profit Orders Avg_Discount
+       Furniture       Chairs ₹162,876.83 ₹32,575.37    307       -0.00%
+      Technology       Phones ₹161,994.94 ₹32,398.99    417       -0.00%
+ Office Supplies      Storage ₹103,685.39 ₹20,737.08    405       -0.00%
+ Office Supplies      Binders ₹103,016.13 ₹20,603.23    742       -0.00%
+       Furniture       Tables ₹100,529.33 ₹20,105.87    164       -0.00%
+      Technology     Machines  ₹75,844.42 ₹15,168.88     46       -0.00%
+      Technology  Accessories  ₹70,236.19 ₹14,047.24    355        0.00%
+      Technology      Copiers  ₹70,129.03 ₹14,025.81     35       -0.00%
+       Furniture    Bookcases  ₹54,547.46 ₹10,909.49    112       -0.00%
+ Office Supplies   Appliances  ₹52,438.49 ₹10,487.70    235        0.00%
+       Furniture  Furnishings  ₹46,813.24  ₹9,362.65    496        0.00%
+ Office Supplies        Paper  ₹37,255.66  ₹7,451.13    654       -0.00%
+ Office Supplies          Art  ₹14,908.67  ₹2,981.73    435       -0.00%
+ Office Supplies     Supplies  ₹12,924.28  ₹2,584.86     81       -0.00%
+ Office Supplies    Envelopes   ₹9,040.14  ₹1,808.03    142       -0.00%
+
+5. TOP PERFORMERS
+Top 10 Products by Sales
+                                                               Product Name      Sales    Profit
+                                      Canon imageCLASS 2200 Advanced Copier ₹30,099.91 ₹6,019.98
+                           GBC Ibimaster 500 Manual ProClick Binding System ₹16,437.17 ₹3,287.43
+                  HP Designjet T520 Inkjet Large Format Printer - 24" Color ₹15,749.91 ₹3,149.98
+                               HON 5400 Series Task Chairs for Big and Tall ₹15,631.85 ₹3,126.37
+                                  GBC DocuBind P400 Electric Binding System  ₹9,254.73 ₹1,850.95
+                              Global Troy Executive Leather Low-Back Tilter  ₹9,117.84 ₹1,823.57
+                           3D Systems Cube Printer, 2nd Generation, Magenta  ₹9,099.93 ₹1,819.99
+                                                    Samsung Galaxy Mega 6.3  ₹9,071.78 ₹1,814.36
+              Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish  ₹8,986.00 ₹1,797.20
+Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind  ₹8,642.73 ₹1,728.55
+
+Top 10 Customers by Sales
+     Customer Name      Sales Orders
+     Adrian Barton ₹12,120.59     10
+      Hunter Lopez ₹11,713.83      6
+      Tom Ashbrook ₹11,649.21      4
+      Sanjit Engle ₹10,639.65     11
+      Bill Shonely ₹10,351.02      5
+Christopher Conant  ₹8,953.37      5
+    Grant Thornton  ₹8,174.87      3
+  Tom Boeckenhauer  ₹7,266.71      6
+       Joseph Holt  ₹6,695.56      6
+     Maria Etezadi  ₹6,220.51     10
+
+Top 5 States by Revenue
+       State     Revenue
+  California ₹210,349.03
+    New York ₹145,909.31
+       Texas  ₹77,193.52
+Pennsylvania  ₹55,239.33
+  Washington  ₹53,874.70
+
+Top 5 Cities by Revenue
+         City     Revenue
+New York City ₹116,870.04
+  Los Angeles  ₹87,068.96
+ Philadelphia  ₹52,856.15
+      Seattle  ₹46,992.72
+San Francisco  ₹46,419.24
+
+Bottom 10 Products by Profit
+                                                                    Product Name Sales Profit
+                                                             Avery Binder Labels ₹1.17  ₹0.23
+                Eureka Disposable Bags for Sanitaire Vibra Groomer I Upright Vac ₹1.62  ₹0.32
+                                         Insertable Tab Indexes For Data Binders ₹1.91  ₹0.38
+                                            Wilson Jones DublLock D-Ring Binders ₹2.02  ₹0.41
+                    Acco Recycled 2" Capacity Laser Printer Hanging Data Binders ₹2.89  ₹0.58
+   GE General Purpose, Extra Long Life, Showcase & Floodlight Incandescent Bulbs ₹2.91  ₹0.58
+                                    Acco Economy Flexible Poly Round Ring Binder ₹3.13  ₹0.63
+Hoover Replacement Belts For Soft Guard & Commercial Ltweight Upright Vacs, 2/Pk ₹3.16  ₹0.63
+                                Storex Flexible Poly Binders with Double Pockets ₹3.17  ₹0.63
+                          Sanford Colorific Eraseable Coloring Pencils, 12 Count ₹3.28  ₹0.66
+
+6. TIME ANALYSIS
+Monthly Sales Trend
+Year_Month      Sales     Profit
+   2015-01  ₹6,385.91  ₹1,277.18
+   2015-02  ₹1,860.74    ₹372.15
+   2015-03 ₹18,689.94  ₹3,737.99
+   2015-04 ₹12,249.46  ₹2,449.89
+   2015-05 ₹15,935.36  ₹3,187.07
+   2015-06 ₹13,759.75  ₹2,751.95
+   2015-07 ₹13,398.09  ₹2,679.62
+   2015-08 ₹14,500.08  ₹2,900.02
+   2015-09 ₹26,527.94  ₹5,305.59
+   2015-10 ₹13,501.26  ₹2,700.25
+   2015-11 ₹32,967.21  ₹6,593.44
+   2015-12 ₹35,586.99  ₹7,117.40
+   2016-01 ₹10,876.27  ₹2,175.25
+   2016-02  ₹7,178.19  ₹1,435.64
+   2016-03 ₹11,591.12  ₹2,318.22
+   2016-04 ₹13,832.90  ₹2,766.58
+   2016-05 ₹13,990.70  ₹2,798.14
+   2016-06 ₹12,988.71  ₹2,597.74
+   2016-07 ₹11,804.59  ₹2,360.92
+   2016-08 ₹18,917.21  ₹3,783.44
+   2016-09 ₹26,903.74  ₹5,380.75
+   2016-10 ₹16,471.85  ₹3,294.37
+   2016-11 ₹39,144.66  ₹7,828.93
+   2016-12 ₹32,348.95  ₹6,469.79
+   2017-01 ₹10,871.00  ₹2,174.20
+   2017-02 ₹17,602.61  ₹3,520.52
+   2017-03 ₹18,988.33  ₹3,797.67
+   2017-04 ₹26,835.47  ₹5,367.09
+   2017-05 ₹35,437.26  ₹7,087.45
+   2017-06 ₹23,958.82  ₹4,791.76
+   2017-07 ₹16,066.96  ₹3,213.39
+   2017-08 ₹14,177.09  ₹2,835.42
+   2017-09 ₹30,453.66  ₹6,090.73
+   2017-10 ₹19,580.18  ₹3,916.04
+   2017-11 ₹38,087.49  ₹7,617.50
+   2017-12 ₹58,254.09 ₹11,650.82
+   2018-01 ₹22,669.62  ₹4,533.92
+   2018-02  ₹9,677.63  ₹1,935.53
+   2018-03 ₹20,073.05  ₹4,014.61
+   2018-04 ₹16,575.93  ₹3,315.19
+   2018-05 ₹19,809.25  ₹3,961.85
+   2018-06 ₹30,720.66  ₹6,144.13
+   2018-07 ₹18,189.69  ₹3,637.94
+   2018-08 ₹32,579.56  ₹6,515.91
+   2018-09 ₹35,492.57  ₹7,098.51
+   2018-10 ₹38,054.33  ₹7,610.87
+   2018-11 ₹62,608.74 ₹12,521.75
+   2018-12 ₹44,735.22  ₹8,947.04
+
+Quarterly Comparison
+ Year Quarter       Sales     Profit
+ 2015      Q1  ₹26,936.59  ₹5,387.32
+ 2015      Q2  ₹41,944.57  ₹8,388.91
+ 2015      Q3  ₹54,426.11 ₹10,885.22
+ 2015      Q4  ₹82,055.46 ₹16,411.09
+ 2016      Q1  ₹29,645.58  ₹5,929.12
+ 2016      Q2  ₹40,812.30  ₹8,162.46
+ 2016      Q3  ₹57,625.55 ₹11,525.11
+ 2016      Q4  ₹87,965.46 ₹17,593.09
+ 2017      Q1  ₹47,461.94  ₹9,492.39
+ 2017      Q2  ₹86,231.55 ₹17,246.31
+ 2017      Q3  ₹60,697.71 ₹12,139.54
+ 2017      Q4 ₹115,921.76 ₹23,184.35
+ 2018      Q1  ₹52,420.30 ₹10,484.06
+ 2018      Q2  ₹67,105.84 ₹13,421.17
+ 2018      Q3  ₹86,261.82 ₹17,252.36
+ 2018      Q4 ₹145,398.29 ₹29,079.66
+
+Year-over-Year Growth
+ Year       Sales     Profit YoY Growth %
+ 2015 ₹205,362.72 ₹41,072.54        0.00%
+ 2016 ₹216,048.89 ₹43,209.78        5.20%
+ 2017 ₹310,312.96 ₹62,062.59       43.63%
+ 2018 ₹351,186.24 ₹70,237.25       13.17%
+Best Month by Sales : 2018-11 (₹62,608.74)
+Worst Month by Sales: 2015-02 (₹1,860.74)
+
+7. CHANNEL ANALYSIS
+Sales Channel
+Sales_Channel       Sales Orders
+       Retail ₹574,213.86  2,495
+       Online ₹508,696.95  2,427
+
+Payment Method Breakdown
+Payment_Method       Sales Orders
+          Card ₹362,871.79  1,617
+           UPI ₹361,240.27  1,640
+          Cash ₹358,798.75  1,665
+
+Customer Type Analysis
+Customer_Type       Sales      Profit Orders
+          New ₹645,733.75 ₹129,146.75  2,988
+    Returning ₹437,177.07  ₹87,435.41  1,934
+
+8. SHIPPING ANALYSIS
+     Ship Mode       Sales Orders  Avg_Shipping_Days
+Standard Class ₹634,727.63  2,945           5.001358
+  Second Class ₹217,739.05    944           3.237288
+   First Class ₹167,776.92    772           2.185233
+      Same Day  ₹62,667.21    261           0.045977
+
+9. PROFIT MARGIN
+Margin Category Distribution
+Margin_Category Count
+Medium (10-30%) 4,922
+
+Average Margin by Category
+Product_Category Avg_Margin
+       Furniture     20.00%
+ Office Supplies     20.00%
+      Technology     20.00%
+
+Average Margin by Region
+ Region Avg_Margin
+Central     20.00%
+   East     20.00%
+  South     20.00%
+   West     20.00%
+
+Average Margin by Segment
+    Segment Avg_Margin
+   Consumer     20.00%
+  Corporate     20.00%
+Home Office     20.00%

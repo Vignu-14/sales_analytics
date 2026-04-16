@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Forecasting</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/charts.js" defer></script>
+  <script src="../js/app.js" defer></script>
+</head>
+<body data-page="forecasting">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <p>Sales Analytics Suite</p>
+        <h2>Sales Performance &amp; Profit Analysis System</h2>
+      </div>
+      <nav>
+        <a class="nav-link" data-page-link="dashboard" href="../index.html"><span class="nav-icon">🏠</span>Dashboard</a>
+        <a class="nav-link" data-page-link="regional" href="regional.html"><span class="nav-icon">🌍</span>Regional</a>
+        <a class="nav-link" data-page-link="products" href="products.html"><span class="nav-icon">📦</span>Products</a>
+        <a class="nav-link" data-page-link="trends" href="trends.html"><span class="nav-icon">📈</span>Trends</a>
+        <a class="nav-link" data-page-link="forecasting" href="forecasting.html"><span class="nav-icon">🔮</span>Forecasting</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-bar observer-item fade-in">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+        <div class="header-copy">
+          <p>Forecast View</p>
+          <h1>📊 Sales Performance Dashboard</h1>
+        </div>
+        <div class="header-meta">
+          <span>6-month projection with confidence band</span>
+        </div>
+      </header>
+
+      <section class="metric-grid" style="margin-bottom: 25px;">
+        <div class="metric-badge observer-item"><span>R²</span><strong data-metric="r2">0.0000</strong></div>
+        <div class="metric-badge observer-item"><span>RMSE</span><strong data-metric="rmse">₹0.00</strong></div>
+        <div class="metric-badge observer-item"><span>Slope</span><strong data-metric="slope">₹0.00</strong></div>
+        <div class="metric-badge observer-item"><span>Intercept</span><strong data-metric="intercept">₹0.00</strong></div>
+      </section>
+
+      <section class="content-row single">
+        <div class="chart-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Forecast Line Chart</h2>
+              <p>Actual sales, predicted line, and confidence band.</p>
+            </div>
+          </div>
+          <div class="chart-canvas large"><canvas id="forecastChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="content-row">
+        <div class="table-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Forecast Table</h2>
+              <p>Next 6 months prediction window.</p>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <table id="forecastTable">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Predicted Sales</th>
+                  <th>Lower Band</th>
+                  <th>Upper Band</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="info-panel observer-item">
+          <div class="panel-header">
+            <div>
+              <h2>Key Insights</h2>
+              <p>Decision-ready summary from the model output.</p>
+            </div>
+          </div>
+          <div class="insight-list" id="forecastInsights"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
